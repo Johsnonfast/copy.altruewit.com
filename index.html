@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Altruewit | Design-Forward Portable Electronics Manufacturing</title>
+    <title>AItruewit | Design-Forward Portable Electronics Manufacturing</title>
     <meta
       name="description"
-      content="Altruewit is a Shenzhen-based B2B manufacturer of portable electronics. We deliver youth-focused design, reliable quality, and cost-effective OEM production for global brands."
+      content="AItruewit is a Shenzhen-based B2B manufacturer of portable electronics. We deliver youth-focused design, reliable quality, and cost-effective OEM production for global brands."
     />
     <link rel="canonical" href="https://www.altruewit.com/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,18 +18,21 @@
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <script defer src="/assets/js/config.js"></script>
     <script defer src="/assets/js/site.js"></script>
-    <script defer src="/assets/js/quick-rfq.js"></script>
+    <script defer src="/assets/js/components/header-nav.js"></script>
+    <script defer src="/assets/js/components/quick-rfq.js"></script>
+    <script defer src="/assets/js/components/mobile-drawer.js"></script>
     <script defer src="/assets/js/consent.js"></script>
   </head>
   <body>
     <div class="topbar">
       <div class="container">
-        Direct inquiries: <a href="mailto:summer@altruewit.com">summer@altruewit.com</a>
+        Direct inquiries: <a href="mailto:summer@aitruewit.com">summer@aitruewit.com</a>
       </div>
     </div>
+
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="/">Altruewit</a>
+        <a class="brand" href="/">AItruewit</a>
         <nav class="nav-links">
           <a href="/">Home</a>
           <div class="nav-item">
@@ -47,10 +50,42 @@
           <a href="/contact/">Contact</a>
         </nav>
         <div class="nav-cta">
-          <a class="btn btn-primary" href="/contact/">Request a Quote</a>
+          <a class="btn btn-primary" href="/contact/#quote">Request a Quote</a>
         </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" aria-hidden="true">
+      <div class="drawer-overlay"></div>
+      <div class="drawer-panel">
+        <div class="drawer-header">
+          <a class="brand" href="/">AItruewit</a>
+          <button class="drawer-close" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+        <nav class="drawer-nav">
+          <a href="/">Home</a>
+          <a href="/products/">Products</a>
+          <a href="/oem-customization/">OEM &amp; Customization</a>
+          <a href="/quality-compliance/">Quality &amp; Compliance</a>
+          <a href="/about/">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+        <div class="drawer-cta">
+          <a class="btn btn-primary btn-block" href="/contact/#quote">Request a Quote</a>
+        </div>
+      </div>
+    </div>
 
     <main>
       <section class="hero">
@@ -63,18 +98,18 @@
               competitive cost.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="/contact/">Request a Quote</a>
-              <a class="btn btn-secondary" href="/products/">View Products</a>
+              <a class="btn btn-primary btn-lg" href="/contact/#quote">Request a Quote</a>
+              <a class="btn btn-secondary btn-lg" href="/products/">View Products</a>
             </div>
             <div class="stats">
-              <div class="stat">Shenzhen-based manufacturing</div>
-              <div class="stat">Youth-focused design language</div>
-              <div class="stat">OEM-ready in 1 business day response</div>
+              <span class="stat-chip">Shenzhen-based manufacturing</span>
+              <span class="stat-chip">Youth-focused design language</span>
+              <span class="stat-chip">OEM-ready in 1 business day response</span>
             </div>
           </div>
           <div class="hero-panel reveal" style="--delay: 120ms">
             <div class="hero-panel-content">
-              <div class="tag">Fast customization</div>
+              <span class="badge-pill">Fast customization</span>
               <h2 style="margin: 16px 0 12px;">Built for retail-ready launches</h2>
               <p class="section-lead">
                 Upgrade proven models with new colors, branding, and packaging to win shelf
@@ -99,11 +134,11 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section-gradient">
         <div class="container">
           <div class="section-header">
             <div>
-              <h2 class="section-title">Why Altruewit</h2>
+              <h2 class="section-title">Why AItruewit</h2>
               <p class="section-lead">Reliability, youth appeal, and cost control in one OEM partner.</p>
             </div>
           </div>
@@ -138,25 +173,25 @@
               <div class="product-image">Mini Air Pump<br />Image coming soon</div>
               <h3>Mini Air Pump</h3>
               <p>Compact inflation for outdoor, travel, and lifestyle use.</p>
-              <a class="btn btn-secondary" href="/products/mini-air-pump/">View category</a>
+              <a class="btn btn-secondary btn-sm" href="/products/mini-air-pump/">View category</a>
             </div>
             <div class="card product-card reveal" style="--delay: 100ms;">
               <div class="product-image">Portable Fan<br />Image coming soon</div>
               <h3>Portable Fan</h3>
               <p>Lightweight cooling solutions with youthful styling options.</p>
-              <a class="btn btn-secondary" href="/products/portable-fan/">View category</a>
+              <a class="btn btn-secondary btn-sm" href="/products/portable-fan/">View category</a>
             </div>
             <div class="card product-card reveal" style="--delay: 200ms;">
               <div class="product-image">Digital Camera<br />Image coming soon</div>
               <h3>Digital Camera</h3>
               <p>Kids, instant printing, and compact digital camera formats.</p>
-              <a class="btn btn-secondary" href="/products/digital-camera/">View category</a>
+              <a class="btn btn-secondary btn-sm" href="/products/digital-camera/">View category</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section-gradient">
         <div class="container split">
           <div class="reveal" style="--delay: 0ms;">
             <h2 class="section-title">OEM &amp; Customization Ready</h2>
@@ -168,7 +203,7 @@
               <li>Manuals, accessory bundles, and market-specific variants.</li>
               <li>Structured process from inquiry to mass production.</li>
             </ul>
-            <div style="margin-top: 20px;">
+            <div style="margin-top: 24px;">
               <a class="btn btn-secondary" href="/oem-customization/">See customization</a>
             </div>
           </div>
@@ -197,48 +232,50 @@
             <h2 class="section-title">Built for outdoor and lifestyle moments</h2>
             <p class="section-lead">Scene-driven positioning for retail and brand marketing.</p>
             <div class="stats">
-              <span class="stat">Camping</span>
-              <span class="stat">Beach</span>
-              <span class="stat">BBQ</span>
-              <span class="stat">Surfing</span>
-              <span class="stat">Cooling hot water</span>
+              <span class="stat-chip">Camping</span>
+              <span class="stat-chip">Beach</span>
+              <span class="stat-chip">BBQ</span>
+              <span class="stat-chip">Surfing</span>
+              <span class="stat-chip">Cooling hot water</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container split">
+      <section class="section section-gradient">
+        <div class="container rfq-section">
           <div class="reveal" style="--delay: 0ms;">
-            <h2 class="section-title">Quick RFQ</h2>
-            <p class="section-lead">Start with the basics and continue to the full RFQ form.</p>
+            <h2 class="rfq-title">Quick RFQ</h2>
+            <p class="rfq-subtitle">Start with the basics and continue to the full RFQ form. We reply within 1 business day.</p>
           </div>
-          <div class="card reveal" style="--delay: 120ms;">
+          <div class="form-card reveal" style="--delay: 120ms;">
             <form class="rfq-mini" data-quick-rfq>
-              <div>
+              <div class="form-group">
                 <label for="quick-name">Contact name</label>
-                <input id="quick-name" name="contactName" type="text" required />
+                <input id="quick-name" name="contactName" type="text" placeholder="Your full name" required />
               </div>
-              <div>
+              <div class="form-group">
                 <label for="quick-email">Business email</label>
-                <input id="quick-email" name="businessEmail" type="email" required />
+                <input id="quick-email" name="businessEmail" type="email" placeholder="you@company.com" required />
               </div>
-              <div>
+              <div class="form-group">
                 <label for="quick-product">Product interest</label>
                 <select id="quick-product" name="productInterest" required>
                   <option value="">Select a category</option>
-                  <option>Mini air pump</option>
-                  <option>Portable fan</option>
-                  <option>Digital camera</option>
-                  <option>Other</option>
+                  <option value="mini-air-pump">Mini Air Pump</option>
+                  <option value="portable-fan">Portable Fan</option>
+                  <option value="digital-camera">Digital Camera</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
-              <div>
+              <div class="form-group">
                 <label for="quick-message">Requirements message</label>
-                <textarea id="quick-message" name="requirementsMessage" required></textarea>
+                <textarea id="quick-message" name="requirementsMessage" placeholder="Tell us about your project requirements..." rows="4" required></textarea>
               </div>
-              <button class="btn btn-primary" type="submit">Continue to full RFQ</button>
-              <span class="form-note">We reply within 1 business day.</span>
+              <button class="btn btn-primary btn-block btn-lg" type="submit">
+                Continue to full RFQ
+              </button>
+              <p class="form-note">We reply within 1 business day.</p>
             </form>
           </div>
         </div>
@@ -248,35 +285,42 @@
     <footer class="footer">
       <div class="container footer-grid">
         <div>
-          <div class="footer-title">Altruewit</div>
+          <div class="footer-brand">AItruewit</div>
           <p>Shenzhen Zhenzhida Electronic Co., Ltd.</p>
           <p>Reliable OEM manufacturing for youth-focused portable electronics.</p>
         </div>
         <div>
           <div class="footer-title">Contact</div>
-          <p><a href="mailto:summer@altruewit.com">summer@altruewit.com</a></p>
+          <p><a href="mailto:summer@aitruewit.com">summer@aitruewit.com</a></p>
           <p>Shenzhen, China</p>
         </div>
         <div>
           <div class="footer-title">Explore</div>
-          <p><a href="/products/">Products</a></p>
-          <p><a href="/oem-customization/">OEM &amp; Customization</a></p>
-          <p><a href="/quality-compliance/">Quality &amp; Compliance</a></p>
+          <div class="footer-links">
+            <p><a href="/products/">Products</a></p>
+            <p><a href="/oem-customization/">OEM &amp; Customization</a></p>
+            <p><a href="/quality-compliance/">Quality &amp; Compliance</a></p>
+            <p><a href="/about/">About</a></p>
+            <p><a href="/blog/">Blog</a></p>
+          </div>
         </div>
         <div>
           <div class="footer-title">Legal</div>
-          <p><a href="/privacy/">Privacy Policy</a></p>
-          <p><a href="/terms/">Terms</a></p>
-          <p><a href="/cookies/">Cookie Policy</a></p>
+          <div class="footer-links">
+            <p><a href="/privacy/">Privacy Policy</a></p>
+            <p><a href="/terms/">Terms</a></p>
+            <p><a href="/cookies/">Cookie Policy</a></p>
+          </div>
         </div>
       </div>
-      <div class="container">© 2026 Shenzhen Zhenzhida Electronic Co., Ltd.</div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Shenzhen Zhenzhida Electronic Co., Ltd. All rights reserved.</p>
+      </div>
     </footer>
 
     <div class="cookie-banner" data-cookie-banner>
-      <div>
-        We use cookies to analyze traffic and improve your experience. Manage your preferences
-        anytime.
+      <div class="cookie-content">
+        <p>We use cookies to analyze traffic and improve your experience. Manage your preferences anytime.</p>
       </div>
       <div class="cookie-actions">
         <button class="cookie-btn cookie-accept" data-cookie-accept>Accept</button>

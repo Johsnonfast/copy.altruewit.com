@@ -1,0 +1,336 @@
+/**
+ * AItruewit Design System - Design Tokens
+ *
+ * A comprehensive design token system for the B2B manufacturing website.
+ * All values are derived from the brand guidelines and UI specifications.
+ */
+
+/* ==========================================================================
+   1. Color System
+   ========================================================================== */
+
+/* Primary Brand Colors */
+:root {
+  --color-primary: #2563EB;
+  --color-primary-700: #1D4ED8;
+  --color-primary-500: #3B82F6;
+  --color-primary-100: #DBEAFE;
+  --color-primary-50: #EFF6FF;
+
+  /* Semantic Colors */
+  --color-primary-hover: var(--color-primary-700);
+  --color-primary-light: var(--color-primary-100);
+
+  /* Neutral Colors - Background */
+  --color-bg: #FFFFFF;
+  --color-bg-muted: #F6F8FB;
+  --color-bg-subtle: #F1F5F9;
+
+  /* Neutral Colors - Text */
+  --color-text: #0B1220;
+  --color-text-muted: #5B667A;
+  --color-text-subtle: #94A3B8;
+  --color-text-inverse: #FFFFFF;
+
+  /* Neutral Colors - Border */
+  --color-border: #E6EAF2;
+  --color-border-light: #F1F5F9;
+
+  /* Semantic Status Colors */
+  --color-success: #10B981;
+  --color-success-light: #D1FAE5;
+  --color-warning: #F59E0B;
+  --color-warning-light: #FEF3C7;
+  --color-error: #EF4444;
+  --color-error-light: #FEE2E2;
+  --color-info: #3B82F6;
+  --color-info-light: #DBEAFE;
+
+  /* Accent Colors */
+  --color-accent-green: #12B981;
+  --color-accent-green-light: #D1FAE5;
+  --color-accent-purple: #8B5CF6;
+  --color-accent-purple-light: #EDE9FE;
+  --color-accent-orange: #F59E0B;
+  --color-accent-orange-light: #FEF3C7;
+
+  /* Background Gradients */
+  --gradient-fog-primary: radial-gradient(ellipse at 20% 20%, rgba(147, 51, 234, 0.08) 0%, transparent 50%);
+  --gradient-fog-blue: radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 50%);
+  --gradient-fog-green: radial-gradient(ellipse at 50% 100%, rgba(16, 185, 129, 0.08) 0%, transparent 50%);
+}
+
+/* ==========================================================================
+   2. Typography System
+   ========================================================================== */
+
+:root {
+  /* Font Families */
+  --font-family-sans: 'Sora', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-display: 'Space Grotesk', 'Sora', sans-serif;
+  --font-family-body: 'Sora', sans-serif;
+
+  /* Font Sizes - Base 16px */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 28px;
+  --font-size-4xl: 36px;
+  --font-size-5xl: 48px;
+  --font-size-6xl: 56px;
+
+  /* Responsive Font Sizes */
+  --font-size-h1: clamp(36px, 5vw, 56px);
+  --font-size-h2: clamp(28px, 3vw, 38px);
+  --font-size-h3: clamp(22px, 2.5vw, 28px);
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.05;
+  --line-height-snug: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.02em;
+}
+
+/* ==========================================================================
+   3. Spacing System (4px baseline)
+   ========================================================================== */
+
+:root {
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-9: 36px;
+  --space-10: 40px;
+  --space-11: 44px;
+  --space-12: 48px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Section Padding */
+  --section-padding-y: var(--space-11);
+  --section-padding-y-lg: var(--space-12);
+
+  /* Container */
+  --container-max-width: 1140px;
+  --container-padding: 4vw;
+}
+
+/* ==========================================================================
+   4. Border Radius System
+   ========================================================================== */
+
+:root {
+  /* Pill/Shaped - Full round for buttons and pills */
+  --radius-pill: 9999px;
+
+  /* Large - Cards and panels */
+  --radius-card: 20px;
+
+  /* Medium - Input fields and form elements */
+  --radius-input: 14px;
+
+  /* Small - Chips and small elements */
+  --radius-sm: 10px;
+
+  /* Extra Small */
+  --radius-xs: 6px;
+
+  /* Special */
+  --radius-full: 9999px;
+  --radius-none: 0;
+}
+
+/* ==========================================================================
+   5. Shadow System
+   ========================================================================== */
+
+:root {
+  /* Card Shadows - Soft and subtle */
+  --shadow-card: 0 30px 80px rgba(15, 23, 42, 0.10);
+  --shadow-card-hover: 0 40px 100px rgba(15, 23, 42, 0.15);
+  --shadow-card-sm: 0 6px 20px rgba(15, 23, 42, 0.06);
+
+  /* Button Shadows */
+  --shadow-button-primary: 0 10px 24px rgba(37, 99, 235, 0.25);
+  --shadow-button-primary-hover: 0 14px 28px rgba(37, 99, 235, 0.35);
+  --shadow-button-secondary: 0 6px 16px rgba(15, 23, 42, 0.06);
+
+  /* Dropdown/Modal Shadows */
+  --shadow-dropdown: 0 14px 30px rgba(15, 23, 42, 0.08);
+  --shadow-modal: 0 25px 50px rgba(15, 23, 42, 0.12);
+
+  /* Focus Ring */
+  --shadow-focus: 0 0 0 3px rgba(37, 99, 235, 0.2);
+
+  /* Legacy Shadows (for compatibility) */
+  --shadow-lg: var(--shadow-card);
+  --shadow-md: var(--shadow-dropdown);
+  --shadow-sm: var(--shadow-card-sm);
+}
+
+/* ==========================================================================
+   6. Z-Index Scale
+   ========================================================================== */
+
+:root {
+  --z-dropdown: 20;
+  --z-sticky: 30;
+  --z-fixed: 40;
+  --z-modal-backdrop: 50;
+  --z-modal: 60;
+  --z-popover: 70;
+  --z-tooltip: 80;
+  --z-toast: 90;
+}
+
+/* ==========================================================================
+   7. Animation & Transitions
+   ========================================================================== */
+
+:root {
+  /* Duration */
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --duration-slower: 500ms;
+
+  /* Easing */
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Reveal Animation */
+  --reveal-duration: 0.6s;
+  --reveal-ease: ease-out;
+}
+
+/* ==========================================================================
+   8. Focus States (Accessibility)
+   ========================================================================== */
+
+:root {
+  --focus-ring-color: var(--color-primary);
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+}
+
+/* ==========================================================================
+   9. Form Control Variables
+   ========================================================================== */
+
+:root {
+  /* Input Heights */
+  --input-height-sm: 40px;
+  --input-height-md: 48px;
+  --input-height-lg: 52px;
+
+  /* Input Padding */
+  --input-padding-x: 14px;
+  --input-padding-y: 12px;
+
+  /* Form Field Spacing */
+  --form-field-spacing: var(--space-4);
+  --form-group-spacing: var(--space-5);
+
+  /* Label */
+  --label-font-size: var(--font-size-sm);
+  --label-font-weight: var(--font-weight-semibold);
+  --label-color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   10. Grid & Layout
+   ========================================================================== */
+
+:root {
+  /* Grid Columns */
+  --grid-columns-2: repeat(2, 1fr);
+  --grid-columns-3: repeat(3, 1fr);
+  --grid-columns-4: repeat(4, 1fr);
+
+  /* Grid Gaps */
+  --grid-gap-sm: var(--space-4);
+  --grid-gap-md: var(--space-6);
+  --grid-gap-lg: var(--space-8);
+
+  /* Flex Gap */
+  --flex-gap-sm: var(--space-3);
+  --flex-gap-md: var(--space-4);
+  --flex-gap-lg: var(--space-6);
+}
+
+/* ==========================================================================
+   11. Breakpoints (Mobile-First)
+   ========================================================================== */
+
+:root {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+/* ==========================================================================
+   12. Legacy Variable Mappings (for backward compatibility)
+   ========================================================================== */
+
+/* Map new tokens to legacy names for smooth migration */
+:root {
+  /* Colors */
+  --bg: var(--color-bg);
+  --surface: var(--color-bg);
+  --ink: var(--color-text);
+  --muted: var(--color-text-muted);
+  --primary: var(--color-primary);
+  --primary-dark: var(--color-primary-700);
+  --accent: var(--color-accent-green);
+  --sun: var(--color-accent-orange);
+  --line: var(--color-border);
+
+  /* Shadows */
+  --shadow-lg: var(--shadow-card);
+  --shadow-md: var(--shadow-dropdown);
+  --shadow-sm: var(--shadow-card-sm);
+
+  /* Radii */
+  --radius-lg: var(--radius-card);
+  --radius-md: var(--radius-input);
+
+  /* Spacing legacy aliases */
+  --space-1: var(--space-1);
+  --space-2: var(--space-2);
+  --space-3: var(--space-3);
+  --space-4: var(--space-4);
+  --space-5: var(--space-5);
+  --space-6: var(--space-6);
+  --space-7: var(--space-7);
+  --space-8: var(--space-8);
+  --space-9: var(--space-9);
+  --space-10: var(--space-10);
+  --space-11: var(--space-11);
+  --space-12: var(--space-12);
+}
