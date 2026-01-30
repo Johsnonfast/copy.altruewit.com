@@ -33,6 +33,10 @@ body {
   line-height: var(--line-height-normal);
 }
 
+p {
+  margin: 0 0 var(--space-4);
+}
+
 /* Fog Gradient Background Effect */
 body::before {
   content: "";
