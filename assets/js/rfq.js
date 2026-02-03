@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const config = window.SITE_CONFIG || {};
 
   // Check if RFQ endpoint is configured - if not, show friendly message
-  if (!config.rfqEndpoint) {
+  if (!config.rfqEndpoint || config.rfqEndpoint.trim() === '') {
     const formContainer = form.closest('.form-container') || form.parentElement;
     if (formContainer) {
       // Create a more user-friendly maintenance message
@@ -167,6 +167,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     statusEl.textContent = message;
     statusEl.style.color = isError ? '#b42318' : '#0f766e';
+    statusEl.style.marginTop = 'var(--space-3)';
+    statusEl.style.padding = 'var(--space-3)';
+    statusEl.style.borderRadius = 'var(--radius-sm)';
+    statusEl.style.background = isError ? 'rgba(180, 35, 24, 0.08)' : 'rgba(15, 118, 110, 0.08)';
   };
 
   const loadRecaptcha = () => {
@@ -215,20 +219,59 @@ document.addEventListener('DOMContentLoaded', () => {
       payload.recaptchaAction = config.recaptchaAction || 'rfq_submit';
       payload.sourcePage = window.location.href;
 
+      // Add debug info in development
+      if (window.location.hostname === 'localhost' || window.location.hostname.includes('vercel')) {
+        payload._debug = {
+          timestamp: new Date().toISOString(),
+          userAgent: navigator.userAgent,
+          referrer: document.referrer
+        };
+      }
+
       const response = await fetch(config.rfqEndpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       });
 
-      if (!response.ok) {
-        throw new Error('Submission failed.');
+      let result;
+      try {
+        result = await response.json();
+      } catch (e) {
+        throw new Error('Invalid response from server');
+      }
+
+      if (!response.ok || !result.ok) {
+        const errorMessage = result.message || 'Submission failed. Please try again.';
+        throw new Error(errorMessage);
       }
 
       form.reset();
-      setStatus('Thank you! Your RFQ has been submitted.', false);
+      setStatus('Thank you! Your RFQ has been submitted successfully. We will reply within 1 business day.', false);
+      
+      // Scroll to status message
+      if (statusEl) {
+        statusEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     } catch (error) {
-      setStatus('Submission failed. Please try again or email us.', true);
+      console.error('RFQ submission error:', error);
+      let errorMessage = 'Submission failed. Please try again or email us directly.';
+      
+      if (error.message) {
+        if (error.message.includes('Missing reCAPTCHA') || error.message.includes('Failed to load reCAPTCHA')) {
+          errorMessage = 'Security verification (reCAPTCHA) failed to load. Please check your connection and try again.';
+        } else if (error.message.includes('NetworkError') || error.message.includes('Failed to fetch')) {
+          errorMessage = 'Network error. Please check your internet connection and try again.';
+        } else if (error.message.includes('Invalid response')) {
+          errorMessage = 'Server error. Please try again later or contact us directly.';
+        } else if (error.message.includes('reCAPTCHA')) {
+          errorMessage = 'Security verification failed. Please try again.';
+        } else {
+          errorMessage = error.message;
+        }
+      }
+      
+      setStatus(errorMessage + ' For immediate assistance, email: summer@altruewit.com', true);
     } finally {
       form.dataset.submitting = 'false';
     }

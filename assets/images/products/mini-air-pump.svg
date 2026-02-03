@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f0f9ff"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="320" cy="60" r="80" fill="#e0f2fe" opacity="0.5"/>
+  <circle cx="80" cy="240" r="60" fill="#bae6fd" opacity="0.5"/>
+  
+  <!-- Air Pump Icon/Illustration -->
+  <g transform="translate(100, 80)">
+    <!-- Main pump body -->
+    <rect x="50" y="40" width="120" height="100" rx="20" fill="#1763ff" opacity="0.9"/>
+    <rect x="60" y="50" width="100" height="80" rx="15" fill="#ffffff"/>
+    
+    <!-- Screen/display -->
+    <rect x="75" y="65" width="70" height="30" rx="6" fill="#0f172a"/>
+    <text x="110" y="86" font-family="monospace" font-size="14" fill="#12b981" text-anchor="middle">120 PSI</text>
+    
+    <!-- Buttons -->
+    <circle cx="85" cy="115" r="10" fill="#e3e8ef"/>
+    <circle cx="110" cy="115" r="10" fill="#1763ff"/>
+    <circle cx="135" cy="115" r="10" fill="#e3e8ef"/>
+    
+    <!-- Hose connection -->
+    <rect x="170" y="80" width="40" height="20" rx="4" fill="#0f172a"/>
+    <path d="M210 90 L240 90 L235 100 L215 100 Z" fill="#5b6b82"/>
+    
+    <!-- Air nozzle -->
+    <ellipse cx="245" cy="90" rx="8" ry="12" fill="#5b6b82"/>
+  </g>
+  
+  <!-- Label -->
+  <text x="200" y="230" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#0369a1" text-anchor="middle">Mini Air Pump</text>
+  <text x="200" y="255" font-family="system-ui, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Compact inflation for outdoor &amp; travel</text>
+</svg>
