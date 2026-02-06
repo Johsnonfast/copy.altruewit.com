@@ -222,6 +222,102 @@ button {
   padding: var(--space-11) 0;
 }
 
+.home-banner {
+  padding: var(--space-6) 0 var(--space-2);
+}
+
+.banner-slider {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(230, 234, 242, 0.9);
+}
+
+.banner-track {
+  display: flex;
+  transition: transform 0.6s ease;
+  will-change: transform;
+}
+
+.banner-slide {
+  min-width: 100%;
+  aspect-ratio: 1400 / 520;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+}
+
+.banner-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-controls {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+  padding: 0 var(--space-4);
+}
+
+.banner-arrow {
+  pointer-events: auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(230, 234, 242, 0.9);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.banner-arrow:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.banner-dots {
+  position: absolute;
+  bottom: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  gap: var(--space-2);
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(230, 234, 242, 0.9);
+  box-shadow: var(--shadow-sm);
+}
+
+.banner-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(37, 99, 235, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.banner-dot.is-active {
+  background: var(--accent);
+  transform: scale(1.2);
+}
+
 .section-header {
   display: flex;
   align-items: flex-end;
@@ -797,6 +893,16 @@ textarea {
     margin-top: var(--space-5);
     text-align: center;
     justify-content: center;
+  }
+
+  .banner-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
+
+  .banner-dots {
+    bottom: var(--space-3);
   }
 }
 
