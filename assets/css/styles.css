@@ -129,7 +129,7 @@ button {
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 12px);
+  top: 100%;
   left: -12px;
   min-width: 220px;
   background: var(--surface);
@@ -141,7 +141,7 @@ button {
   pointer-events: none;
   transform: translateY(8px);
   transition: all 0.2s ease;
-  z-index: 20;
+  z-index: 60;
 }
 
 .dropdown-menu a {
