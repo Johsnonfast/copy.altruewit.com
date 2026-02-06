@@ -1,4 +1,8 @@
 :root {
+  --font-headline: "Manrope", "Space Grotesk", "Sora", sans-serif;
+  --font-body: "Sora", "Space Grotesk", sans-serif;
+  --tracking-tight: 0.02em;
+  --tracking-wide: 0.18em;
   --bg: #ffffff;
   --surface: #ffffff;
   --ink: #0b1220;
@@ -38,10 +42,11 @@ html {
 
 body {
   margin: 0;
-  font-family: "Sora", "Space Grotesk", sans-serif;
+  font-family: var(--font-body);
   color: var(--ink);
   background: linear-gradient(180deg, #ffffff 0%, #f5f8ff 55%, #ffffff 100%);
   min-height: 100vh;
+  line-height: 1.7;
 }
 
 body::before {
@@ -110,7 +115,7 @@ button {
 }
 
 .brand {
-  font-family: "Space Grotesk", "Sora", sans-serif;
+  font-family: var(--font-headline);
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -327,8 +332,12 @@ button {
 }
 
 .section-title {
-  font-family: "Space Grotesk", "Sora", sans-serif;
+  font-family: var(--font-headline);
   font-size: clamp(28px, 3vw, 38px);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  font-weight: 400;
+  line-height: 1.1;
   margin: 0 0 var(--space-3);
 }
 
@@ -351,9 +360,12 @@ button {
 }
 
 .hero-title {
-  font-family: "Space Grotesk", "Sora", sans-serif;
+  font-family: var(--font-headline);
   font-size: clamp(36px, 5vw, 56px);
   line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  font-weight: 400;
   margin: 0 0 var(--space-4);
 }
 
@@ -397,7 +409,9 @@ button {
   padding: 6px 14px;
   border-radius: 999px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-tight);
   background: rgba(37, 99, 235, 0.12);
   color: var(--primary);
 }
@@ -419,6 +433,10 @@ button {
 .card h3 {
   margin: 0 0 var(--space-2);
   font-size: 18px;
+  font-family: var(--font-headline);
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .card p {
@@ -435,7 +453,9 @@ button {
   background: rgba(255, 122, 89, 0.16);
   color: var(--accent);
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-tight);
 }
 
 .product-card {
@@ -580,6 +600,8 @@ textarea {
   font-size: 12px;
   color: var(--muted);
   margin-bottom: var(--space-3);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-tight);
 }
 
 .breadcrumb a {
@@ -601,7 +623,10 @@ textarea {
 }
 
 .footer-title {
-  font-weight: 600;
+  font-family: var(--font-headline);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
   color: var(--ink);
   margin-bottom: var(--space-2);
 }
