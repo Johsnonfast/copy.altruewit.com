@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#f8fafc"/>
+  <circle cx="60" cy="230" r="70" fill="#e2e8f0" opacity="0.6"/>
+  <circle cx="340" cy="70" r="60" fill="#dbeafe" opacity="0.6"/>
+
+  <g transform="translate(95, 80)">
+    <rect x="10" y="35" width="210" height="120" rx="22" fill="#0f172a"/>
+    <rect x="25" y="50" width="180" height="90" rx="14" fill="#334155"/>
+
+    <circle cx="115" cy="95" r="42" fill="#1e293b"/>
+    <circle cx="115" cy="95" r="34" fill="#0f172a"/>
+    <circle cx="115" cy="95" r="24" fill="#1e293b"/>
+    <circle cx="115" cy="95" r="14" fill="#2563eb"/>
+
+    <rect x="30" y="40" width="30" height="16" rx="4" fill="#475569"/>
+    <rect x="160" y="42" width="26" height="20" rx="4" fill="#475569"/>
+  </g>
+
+  <text x="200" y="235" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#1e3a8a" text-anchor="middle">Camera Series</text>
+  <text x="200" y="258" font-family="system-ui, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Compact, kids, and instant-print camera platforms</text>
+</svg>

@@ -1,13 +1,13 @@
 :root {
-  --bg: #f7f8fb;
+  --bg: #ffffff;
   --surface: #ffffff;
-  --ink: #121826;
-  --muted: #5b6b82;
-  --primary: #1763ff;
-  --primary-dark: #0c4ccc;
-  --accent: #12b981;
+  --ink: #0b1220;
+  --muted: #5b667a;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --accent: #ff7a59;
   --sun: #f59e0b;
-  --line: #e3e8ef;
+  --line: #e6eaf2;
   --shadow-lg: 0 24px 60px rgba(15, 23, 42, 0.1);
   --shadow-md: 0 14px 30px rgba(15, 23, 42, 0.08);
   --shadow-sm: 0 6px 16px rgba(15, 23, 42, 0.06);
@@ -40,7 +40,7 @@ body {
   margin: 0;
   font-family: "Sora", "Space Grotesk", sans-serif;
   color: var(--ink);
-  background: linear-gradient(180deg, #f7f8fb 0%, #f3f7ff 55%, #ffffff 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8ff 55%, #ffffff 100%);
   min-height: 100vh;
 }
 
@@ -49,9 +49,9 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(circle at 10% 10%, rgba(23, 99, 255, 0.08), transparent 45%),
-    radial-gradient(circle at 90% 10%, rgba(18, 185, 129, 0.08), transparent 40%),
-    radial-gradient(circle at 20% 90%, rgba(245, 158, 11, 0.08), transparent 50%);
+    radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.1), transparent 45%),
+    radial-gradient(circle at 90% 12%, rgba(56, 189, 248, 0.08), transparent 40%),
+    radial-gradient(circle at 20% 90%, rgba(255, 122, 89, 0.1), transparent 50%);
   pointer-events: none;
   z-index: -1;
 }
@@ -297,7 +297,7 @@ button {
   border-radius: 999px;
   font-size: 12px;
   font-weight: 600;
-  background: rgba(23, 99, 255, 0.12);
+  background: rgba(37, 99, 235, 0.12);
   color: var(--primary);
 }
 
@@ -331,7 +331,7 @@ button {
   align-items: center;
   padding: 4px 10px;
   border-radius: 999px;
-  background: rgba(18, 185, 129, 0.12);
+  background: rgba(255, 122, 89, 0.16);
   color: var(--accent);
   font-size: 12px;
   font-weight: 600;
@@ -344,7 +344,7 @@ button {
 
 .product-image {
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, rgba(23, 99, 255, 0.12), rgba(18, 185, 129, 0.08));
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(56, 189, 248, 0.1));
   padding: var(--space-5);
   min-height: 160px;
   display: grid;

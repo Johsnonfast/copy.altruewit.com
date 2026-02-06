@@ -124,7 +124,7 @@ curl -X POST \
     "contactName": "Test User",
     "businessEmail": "test@example.com",
     "countryRegion": "USA",
-    "productInterest": "Mini air pump",
+    "productInterest": "AI Product Series",
     "estimatedOrderQuantity": "500",
     "requirementsMessage": "This is a test submission",
     "privacyConsent": true,

@@ -45,9 +45,9 @@
 
 ## 6) Product Strategy (Beta)
 - Product counts:
-  - Mini air pump: 1 model
-  - Portable fan: 1 model
-  - Digital camera: 3 models
+  - AI Product Series: 1 model
+  - Outdoor Series: 1 model
+  - Camera Series: 3 models
 - No product assets available at beta launch
 - Use placeholders and "Specs available on request"
 - Product model pages set to noindex until assets are provided
@@ -58,7 +58,7 @@
 - Cost-effective light customization on mature models
 
 ## 8) About Page Copy (One-line)
-- Draft: "Altruewit is a Shenzhen-based B2B manufacturer of portable electronics, delivering youth-focused designs, reliable quality, and cost-effective production."
+- Draft: "Altruewit is a Shenzhen-based B2B manufacturer of AI smart devices, delivering reliable quality and cost-effective production."
 
 ## 9) OEM/Customization
 - Default flow: Inquiry -> Design/Spec -> Sampling -> Mass Production
@@ -70,7 +70,7 @@
 - Allow line: "Certifications available on request"
 
 ## 11) Usage Scenarios
-- Mini air pump / Portable fan: camping, beach, BBQ, surfing, hot water cooling
+- AI Product Series / Outdoor Series: camping, beach, BBQ, surfing, hot water cooling
 - Cameras:
   - Kids Camera: age 5-12, portable, durable, compact, cute
   - Instant Printing Camera: inkless printing, paper size on request
@@ -89,7 +89,7 @@
     Product interest, Estimated order quantity, Requirements message
 - Optional fields:
   - Company website, WhatsApp/Phone, Target market, Timeline, Customization
-- Product interest options: Mini air pump / Portable fan / Digital camera / Other
+- Product interest options: AI Product Series / Outdoor Series / Camera Series / Other
 - Estimated order quantity: free text
 - Privacy policy checkbox: required
 - Anti-spam: reCAPTCHA v3 + hidden field + rate limit

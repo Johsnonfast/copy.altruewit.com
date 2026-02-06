@@ -33,14 +33,22 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="/">Altruewit</a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger" data-mobile-menu-toggle aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
         <nav class="nav-links">
           <a href="/">Home</a>
           <div class="nav-item">
             <a href="/products/">Products</a>
             <div class="dropdown-menu">
-              <a href="/products/mini-air-pump/">Mini Air Pump</a>
-              <a href="/products/portable-fan/">Portable Fan</a>
-              <a href="/products/digital-camera/">Digital Camera</a>
+              <a href="/products/ai-series/">AI Product Series</a>
+              <a href="/products/camera-series/">Camera Series</a>
+              <a href="/products/outdoor-series/">Outdoor Series</a>
             </div>
           </div>
           <a href="/oem-customization/">OEM &amp; Customization</a>
@@ -51,6 +59,39 @@
         </nav>
         <div class="nav-cta">
           <a class="btn btn-primary" href="/contact/">Request a Quote</a>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-drawer" data-mobile-drawer>
+        <div class="mobile-drawer-backdrop" data-mobile-drawer-close></div>
+        <div class="mobile-drawer-content">
+          <div class="mobile-drawer-header">
+            <a class="brand" href="/">Altruewit</a>
+            <button class="mobile-drawer-close" data-mobile-drawer-close aria-label="Close navigation menu">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+          <nav class="mobile-nav-links">
+            <a href="/">Home</a>
+            <div class="mobile-nav-item">
+              <a href="/products/" class="mobile-nav-expand">Products</a>
+              <div class="mobile-submenu">
+                <a href="/products/ai-series/">AI Product Series</a>
+                <a href="/products/camera-series/">Camera Series</a>
+                <a href="/products/outdoor-series/">Outdoor Series</a>
+              </div>
+            </div>
+            <a href="/oem-customization/">OEM &amp; Customization</a>
+            <a href="/quality-compliance/">Quality &amp; Compliance</a>
+            <a href="/about/">About</a>
+            <a href="/blog/">Blog</a>
+            <a href="/contact/">Contact</a>
+            <a class="btn btn-primary mobile-nav-cta" href="/contact/">Request a Quote</a>
+          </nav>
         </div>
       </div>
     </header>
@@ -103,7 +144,7 @@
         <div>
           <div class="footer-title">Altruewit</div>
           <p>Shenzhen Zhenzhida Electronic Co., Ltd.</p>
-          <p>Reliable OEM manufacturing for youth-focused portable electronics.</p>
+          <p>Reliable OEM manufacturing for AI-ready smart devices.</p>
         </div>
         <div>
           <div class="footer-title">Contact</div>

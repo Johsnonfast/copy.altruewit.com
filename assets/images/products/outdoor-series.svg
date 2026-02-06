@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#f0f9ff"/>
+  <circle cx="320" cy="60" r="70" fill="#e0f2fe" opacity="0.6"/>
+  <circle cx="80" cy="240" r="60" fill="#bae6fd" opacity="0.6"/>
+
+  <g transform="translate(105, 80)">
+    <rect x="35" y="40" width="150" height="100" rx="22" fill="#2563eb" opacity="0.92"/>
+    <rect x="50" y="55" width="120" height="70" rx="16" fill="#ffffff"/>
+
+    <rect x="70" y="70" width="80" height="28" rx="6" fill="#0f172a"/>
+    <text x="110" y="89" font-family="system-ui, sans-serif" font-size="12" fill="#38bdf8" text-anchor="middle">OUTDOOR</text>
+
+    <circle cx="75" cy="120" r="7" fill="#e2e8f0"/>
+    <circle cx="110" cy="120" r="7" fill="#ff7a59"/>
+    <circle cx="145" cy="120" r="7" fill="#e2e8f0"/>
+
+    <path d="M185 90 L215 90 L210 102 L190 102 Z" fill="#5b6b82"/>
+    <ellipse cx="218" cy="90" rx="6" ry="10" fill="#64748b"/>
+  </g>
+
+  <text x="200" y="235" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#0369a1" text-anchor="middle">Outdoor Series</text>
+  <text x="200" y="258" font-family="system-ui, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Portable tools for travel and outdoor moments</text>
+</svg>

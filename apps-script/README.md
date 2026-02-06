@@ -37,7 +37,7 @@ Send a POST request with JSON payload:
   "contactName": "Jane",
   "businessEmail": "test@example.com",
   "countryRegion": "USA",
-  "productInterest": "Mini air pump",
+  "productInterest": "AI Product Series",
   "estimatedOrderQuantity": "500",
   "requirementsMessage": "Test request",
   "privacyConsent": true,
