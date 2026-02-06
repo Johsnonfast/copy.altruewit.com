@@ -179,6 +179,11 @@ button {
   gap: var(--space-3);
 }
 
+.hamburger,
+.mobile-drawer {
+  display: none;
+}
+
 .btn {
   border: 1px solid transparent;
   border-radius: 999px;
@@ -642,6 +647,7 @@ textarea {
 
   /* Mobile Drawer Overlay */
   .mobile-drawer {
+    display: block;
     position: fixed;
     inset: 0;
     z-index: 100;
